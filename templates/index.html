@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="{{url_for('static' , filename='style.css')}}">
     <title>A portfolio for roommates</title>
 
 </head>
 <body>
     <h1>Welcome to our Portfolio</h1>
+    <!-- {%for person in people%}  
+        <p>{{person}}</p>
+    {%endfor%} -->
+    <!-- accessing the created dictionairy -->
+    <!-- {%for person in people%}
+        <p>{{person.name}}</p>
+        <img src = "{{person.profile_image}}"
+        alt="profile image" 
+        width="200"
+        height="200">
+
+        <p>{{person.name}}</p>
+
+        <a href ="{{person.instagram}}" target="_blank">
+            instagram
+        </a> 
+        
+    {%endfor%} -->
 <br>
 <div class="Rhitam">
     <!-- profile picture -->
