@@ -53,5 +53,58 @@ img{
   /* Direction can be an angle (e.g., 90deg) or directions (e.g., to right, to top right) */
   /* background-image: linear-gradient(345deg,rgba(2, 0, 36, 1) 19%, rgba(9, 9, 121, 1) 41%, rgba(0, 212, 255, 1) 82%);
 } */
+.flex-container {
+  display: flex; /* Makes the children align horizontally */
+  gap: 20px;     /* Adds a 20px space between the two divs */
+}
+
+.box {
+  flex: 1;       /* Gives both divs equal width */
+  padding: 20px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+        to right,
+        rgb(250,78,10),
+        rgb(247, 12, 204),
+        rgb(0, 106,255),
+        rgb(48, 248, 255),
+        rgb(250, 78, 10)
+    );
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: gradientAnimation 3s linear infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+body{
+   background: #020024;
+background: radial-gradient(circle,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 83%);
+
+}
+#one{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+#two{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
 
 
