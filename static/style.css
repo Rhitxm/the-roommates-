@@ -105,5 +105,14 @@ background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 
     font-size: 20px;
     color: white;
 }
+.custom-shape-divider-bottom-1789300053 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 206px;
+}
 
+.custom-shape-divider-bottom-1789300053 .shape-fill {
+    fill: #FFFFFF;
+}
 
