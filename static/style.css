@@ -92,9 +92,8 @@ h1{
     }
 }
 body{
-   background: #020024;
-background: radial-gradient(circle,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 83%);
-
+    background: #833AB4;
+background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 93%, rgba(252, 176, 69, 1) 100%);
 }
 #one{
     text-align: center;
