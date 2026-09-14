@@ -11,82 +11,40 @@
 </head>
 <body>
     <h1>Welcome to our Portfolio</h1>
-    <!-- Code commented out had some errors, we realsied and corrected it too soon -->
-    <!-- {%for person in people%}  
-        <p>{{person}}</p>
-    {%endfor%} -->
-    <!-- accessing the created dictionairy -->
-    <!-- {%for person in people%}
-        <p>{{person.name}}</p>
-        <img src = "{{person.profile_image}}"
-        alt="profile image" 
-        width="200"
-        height="200">
-
-        <p>{{person.name}}</p>
-
-        <a href ="{{person.instagram}}" target="_blank">
-            instagram
-        </a> 
-        
-    {%endfor%} -->
-<!-- <br>
-<div class="Rhitam">
-<img id="rhitam-profile" src="https://avatars.githubusercontent.com/u/293724039?v=4" alt="Profile Image" width="200" height="200">
-<p><b>Rhitam</b></p>
-</div>
-<div>
-<a href="https://www.instagram.com/rhitxm.exe/" target="_blank"><img id="rhitam-insta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLMeCMRrwdD3io9ne_xIIyQ0qwVfyv3NrD8pMhnlamg&s" alt="Profile Image" width="30" height="30"></a>
-<br>
- <a href="https://www.linkedin.com/in/rhitam-paul-4a58021b4/" target="_blank"><img id="rhitam-linkedin" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1280px-LinkedIn_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Profile Image" width="30" height="30"></a>
-
-</div>
-<br>
-<div>
-<img id="sumedh-profile" src="https://avatars.githubusercontent.com/u/190742018?v=4" alt="Profile Image" width="200" height="200">
-<p><b>Sumedh</b></p>
-</div>
-<div>
-    <a href="https://www.instagram.com/sumedhg.69/" target="_blank"><img id="sumedh-insta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLMeCMRrwdD3io9ne_xIIyQ0qwVfyv3NrD8pMhnlamg&s" alt="Profile Image" width="30" height="30"></a>
-    <br>
-     <a href="https://www.linkedin.com/in/sumedh-ghule-790617342/" target="_blank"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1280px-LinkedIn_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Profile Image" width="30" height="30"></a>
-</div>
-
     
-</body>
-</html> -->
 <div class="flex-container">
-  <div class="box">
-    <div>
-    <img id="rhitam-profile" src="https://avatars.githubusercontent.com/u/293724039?v=4" alt="Profile Image" width="200" height="200">
-    <p id="one"><b>Rhitam</b></p>
-      <a href="https://www.instagram.com/rhitxm.exe/" target="_blank"><img id="rhitam-insta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLMeCMRrwdD3io9ne_xIIyQ0qwVfyv3NrD8pMhnlamg&s" alt="Profile Image" width="30" height="30"></a>
-      <a href="https://www.linkedin.com/in/rhitam-paul-4a58021b4/" target="_blank"><img id="rhitam-linkedin" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1280px-LinkedIn_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Profile Image" width="30" height="30"></a>
-      <a href="https://github.com/Rhitxm" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Profile Image" width="30" height="30"></a>
 
+    <!-- genearlizing the html -->
+  {%for person in people%}
+   <div class = "box">
+    <img src = "{{person.profile_image}}"
+         alt = "profile image"
+         width = "200"
+         height= "200">
 
+    <p><b>{{person.name}}</b></p>
 
+    <a href="{{person.instagram}}" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLMeCMRrwdD3io9ne_xIIyQ0qwVfyv3NrD8pMhnlamg&s"
+        alt="Instagram"
+        width="30"
+        height="30">
+    </a>
+    <a href="{{person.linkedin}}" target="_blank">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1280px-LinkedIn_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
+        alt="Linkedin"
+        width="30"
+        height="30">
+    </a>      
+    <a href="{{person.github}}" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+        alt="Github"
+        width="30"
+        height="30">
+    </a>      
+   </div>  
+  {%endfor%}
 
-
-
-
-    </div>
-
-
-
-
-    </div>
-    <div class="box"><img id="sumedh-profile" src="https://avatars.githubusercontent.com/u/190742018?v=4" alt="Profile Image" width="200" height="200">
-    <p id="two"><b>Sumedh</b></p>
-    <a href="https://www.instagram.com/sumedhg.69/" target="_blank"><img id="sumedh-insta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLMeCMRrwdD3io9ne_xIIyQ0qwVfyv3NrD8pMhnlamg&s" alt="Profile Image" width="30" height="30"></a>
-    <a href="https://www.linkedin.com/in/sumedh-ghule-790617342/" target="_blank"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1280px-LinkedIn_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Profile Image" width="30" height="30"></a>
-    <a href="https://github.com/Sumedh2509" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Profile Image" width="30" height="30"></a>
-
-
-
-
-
-    </div>
 </div>
 <div class="custom-shape-divider-bottom-1789300053">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
