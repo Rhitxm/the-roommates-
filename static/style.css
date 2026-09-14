@@ -1,58 +1,3 @@
-/* h1{
-    text-align: center;
-    font-family: Georgia, serif;
-    border: 4px ;
-    border-radius: 10px;
-    margin: 0px;
-    background-image: linear-gradient(317deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-    padding: 0px;
-    padding-top: 10px;
-    height: 50px;
-    width: 100%;
-    color: white;
-    align-items: center;
-    font-size: 30px;
-    background: linear-gradient(
-        to right,
-        rgb(250,78,10)
-        rgb(247, 12, 204),
-        rgb(0, 106,255),
-        rgb(48, 248, 255),
-        rgb(250, 78, 10),
-    );
-    background-clip: text;
-    color: transparent;
-    background-size: 200% auto;
-    animation: gradientAnimation 3s linear infinite;
-}
-@keyframes gradientAnimation {
-    0% {
-        background-position: 200% 50% ;
-    }
-    100% {
-        background-position:0% 50%;
-    }
-}
-div{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    gap: 10px;
-    border-width: 6px;
-    margin: 100px;
-    padding: 10px;
-}
-img{
-    display: flex;
-    border: 2px ;
-    border-radius: 5px;
-    padding: 5px;
-} */
-
-/* body{ */
-  /* Direction can be an angle (e.g., 90deg) or directions (e.g., to right, to top right) */
-  /* background-image: linear-gradient(345deg,rgba(2, 0, 36, 1) 19%, rgba(9, 9, 121, 1) 41%, rgba(0, 212, 255, 1) 82%);
-} */
 .flex-container {
   display: flex; /* Makes the children align horizontally */
   gap: 20px;     /* Adds a 20px space between the two divs */
@@ -71,11 +16,11 @@ h1{
     text-align: center;
     background: linear-gradient(
         to right,
-        rgb(250,78,10),
-        rgb(247, 12, 204),
+        rgb(66, 1, 119),
+        rgb(45, 1, 131),
         rgb(0, 106,255),
-        rgb(48, 248, 255),
-        rgb(250, 78, 10)
+        rgb(47, 255, 0),
+        rgb(255, 247, 0)
     );
     background-clip: text;
     color: transparent;
@@ -92,7 +37,7 @@ h1{
     }
 }
 body{
-    background: #833AB4;
+   background: #833AB4;
 background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 93%, rgba(252, 176, 69, 1) 100%);
 }
 #one{
@@ -105,6 +50,52 @@ background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 
     font-size: 20px;
     color: white;
 }
+#rhitam-profile, #sumedh-profile{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+#rhitam-insta{
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center
+    
+}
+#sumedh-insta{
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+.custom-shape-divider-top-1789299733 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1789299961 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1789300053 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
 .custom-shape-divider-bottom-1789300053 svg {
     position: relative;
     display: block;
@@ -113,6 +104,11 @@ background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 
 }
 
 .custom-shape-divider-bottom-1789300053 .shape-fill {
-    fill: #FFFFFF;
+    fill: #005eff;
+}
+a{
+    text-decoration: none;
+    color: beige;
+    font-size: larger;
 }
 
