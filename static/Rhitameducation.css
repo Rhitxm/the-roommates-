@@ -74,5 +74,28 @@ body{
     left: -50px;
     top: 90px;
 }
+h1{
+    text-align: center;
+     background: linear-gradient(
+        to right,
+        rgb(255, 19, 204),
+        rgb(163, 117, 255),
+        rgb(0, 234, 255),
+        rgb(47, 255, 0),
+        rgb(255, 247, 0)
+    );
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: gradientAnimation 3s linear infinite;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
   
