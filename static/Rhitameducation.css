@@ -1,1 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 
+}
+body{
+    background: url(WhatsApp\ Image\ 2026-09-14\ at\ 11.48.14\ PM.jpeg)center no-repeat;
+    background-size: cover;
+    color: white;
+}
+.timeline-wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 12% 2rem;
+}
+.timeline-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.heading{
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.heading i{
+    font-size: 4rem;
+}
+.content-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+    margin: 0 2rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 3px solid rgb(110, 110, 110);
+    border-radius: 1rem;
+    font-size: 14px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.content-box:hover{
+    box-shadow: 0 0 25px rgb(0, 255, 255);
+    border: 3px solid rgb(0, 255, 255);
+}
+.timeline-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-left: 5px solid rgb(0, 255, 255);
+}
+.content-box h3{
+    font-size: 1.3rem;
+}
+.date{
+    font-size: 1.7rem;
+    color: rgb(0, 255, 255);
+    font-weight: 700;
+}
+.content-box:before{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 255, 255);
+    border-radius: 50%;
+    left: -50px;
+    top: 90px;
+}
+
+  
