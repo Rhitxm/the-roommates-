@@ -8,7 +8,7 @@
 <br>
 A shared digital space where creativity, technology, and individuality come together.
 <br>
-Welcome to The Roommates — a collaborative portfolio project created by a group of aspiring engineers and developers.
+Welcome to The Roommates — a collaborative portfolio project created by a group of aspiring engineers and developers, Sumedh and Rhitam.
 <br>
 Each roommate brings their own skills, interests, projects, and personality to the house, while the website brings everything together into one interactive experience.
 <br><br>
