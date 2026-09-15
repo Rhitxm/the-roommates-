@@ -41,7 +41,10 @@
         alt="Github"
         width="30"
         height="30">
-    </a>      
+    </a> 
+    <a href="{{ url_for('education', name=person.name|lower) }}">
+    Education
+    </a>     
    </div>  
   {%endfor%}
 

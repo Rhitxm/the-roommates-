@@ -33,15 +33,25 @@ def about_us():
 def education(name):
     education_data = {"sumedh":{"name":"Sumedh", 
                                 "college":"VESIT", 
-                                "course":"Computer engineering"}, 
+                                "course":"Computer engineering",
+                                "10year": "2022-2023",
+                                "12year": "2024-2025",
+                                "clgyear": "2026-2030"}, 
                         "rhitam":{"name":"Rhitam",
                                   "college":"VESIT",
-                                  "course": "Automation and robotics"}}
+                                  "course": "Automation and robotics",
+                                  "10year" : "2023-2024",
+                                  "12year": "2025-2026",
+                                  "clgyear": "2026-2030"}}
     # data_of = education_data[name] --this can throw a key error when we don't use the keys that we have already established
     data_of = education_data.get(name) #this is better, as we know - if we don't have the key established it returns none
     if data_of is None:
         abort(404)
     return render_template("education.html", person= data_of)
+
+# @app.route("/temp")
+# def temporary():
+#     return render_template("/Rhitameducation.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
