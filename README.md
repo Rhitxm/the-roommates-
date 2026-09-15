@@ -37,7 +37,7 @@ The project combines everyone's individual portfolios into a single interactive 
 <br><br>
 <h1>💡 Our Vision</h1>
 <br>
-Different rooms. Different skills. One house.
+Same room. Different skills. One house.
 <br>
 The Roommates represents the idea that everyone has a different technical journey.
 <br>
