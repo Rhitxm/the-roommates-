@@ -31,18 +31,19 @@ def about_us():
 @app.route("/education/<name>") #<name> is a placeholder here  
 # so if we do education/sumedh - it will return - Education page for sumedh
 def education(name):
-    education_data = {"sumedh":{"name":"Sumedh", 
-                                "college":"VESIT", 
-                                "course":"Computer engineering",
-                                "10year": "2022-2023",
-                                "12year": "2024-2025",
-                                "clgyear": "2026-2030"}, 
+    education_data = {
                         "rhitam":{"name":"Rhitam",
                                   "college":"VESIT",
                                   "course": "Automation and robotics",
                                   "10year" : "2023-2024",
                                   "12year": "2025-2026",
-                                  "clgyear": "2026-2030"}}
+                                  "clgyear": "2026-2030"},
+                                  "sumedh":{"name":"Sumedh", 
+                                  "college":"VESIT", 
+                                  "course":"Computer engineering",
+                                  "10year": "2022-2023",
+                                  "12year": "2024-2025",
+                                  "clgyear": "2026-2030"} }
     # data_of = education_data[name] --this can throw a key error when we don't use the keys that we have already established
     data_of = education_data.get(name) #this is better, as we know - if we don't have the key established it returns none
     if data_of is None:
