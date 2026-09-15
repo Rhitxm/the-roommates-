@@ -1,5 +1,10 @@
 # the-roommates
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Roommates</title>
 <h1>🏠 The Roommates</h1>
 <br>
 A shared digital space where creativity, technology, and individuality come together.
