@@ -1,5 +1,6 @@
 .flex-container {
   display: flex; /* Makes the children align horizontally */
+  flex-direction: row;
   gap: 20px;     /* Adds a 20px space between the two divs */
 }
 
@@ -62,8 +63,10 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    border-radius:10px;
+    overflow: hidden;
 }
-#rhitam-insta{
+/* #rhitam-insta{
     align-items: center;
     border-radius: 10px;
     justify-content: center
@@ -73,7 +76,7 @@ body{
     align-items: center;
     border-radius: 10px;
     justify-content: center;
-} 
+}  */
 a{
     text-decoration: none;
     color: beige;
