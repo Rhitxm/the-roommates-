@@ -5,8 +5,12 @@
 
 .box {
   flex: 1;       /* Gives both divs equal width */
-  padding: 20px;
+  padding: 20px;}
+
+.box > div {
+    text-align: center;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -50,13 +54,19 @@ background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 
     font-size: 20px;
     color: white;
 }
-#rhitam-profile, #sumedh-profile{
+.profile-image{
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
 }
-#rhitam-insta{
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+/* #rhitam-insta{
     align-items: center;
     border-radius: 10px;
     justify-content: center
@@ -66,7 +76,7 @@ background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 
     align-items: center;
     border-radius: 10px;
     justify-content: center;
-}
+} */
 .custom-shape-divider-top-1789299733 {
     position: absolute;
     top: 0;

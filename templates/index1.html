@@ -24,33 +24,36 @@
     <div class="box">
 
         <div>
-            <img src="{{ person.profile_image }}"
+            <img class="profile-image" 
+                 src="{{ person.profile_image }}"
                  alt="Profile Image"
                  width="300"
                  height="300">
 
             <p><b>{{ person.name }}</b></p>
 
-            <a href="{{ person.instagram }}" target="_blank">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLMeCMRrwdD3io9ne_xIIyQ0qwVfyv3NrD8pMhnlamg&s"
-                     alt="Instagram"
-                     width="40"
-                     height="40">
-            </a>
+            <div class="social-icons">
+                <a href="{{ person.instagram }}" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLMeCMRrwdD3io9ne_xIIyQ0qwVfyv3NrD8pMhnlamg&s"
+                        alt="Instagram"
+                        width="40"
+                        height="40">
+                </a>
 
-            <a href="{{ person.linkedin }}" target="_blank">
-                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1280px-LinkedIn_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
-                     alt="LinkedIn"
-                     width="40"
-                     height="40">
-            </a>
+                <a href="{{ person.linkedin }}" target="_blank">
+                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1280px-LinkedIn_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
+                        alt="LinkedIn"
+                        width="40"
+                        height="40">
+                </a>
 
-            <a href="{{ person.github }}" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                     alt="Github"
-                     width="40"
-                     height="40">
-            </a>
+                <a href="{{ person.github }}" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                        alt="Github"
+                        width="40"
+                        height="40">
+                </a>
+            </div>
 
             <br><br>
 
