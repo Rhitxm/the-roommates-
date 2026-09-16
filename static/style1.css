@@ -10,21 +10,17 @@
 .box > div {
     text-align: center;
 }
-
-body{
-    margin: 0;
-    padding: 0;
-}
 h1{
-    align-items: center;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
     text-align: center;
     background: linear-gradient(
         to right,
-        rgb(66, 1, 119),
-        rgb(45, 1, 131),
-        rgb(0, 106,255),
-        rgb(47, 255, 0),
-        rgb(255, 247, 0)
+        rgb(255, 254, 255),
+        rgb(255, 255, 255),
+        rgb(201, 211, 225),
+        rgb(248, 250, 248),
+        rgb(245, 245, 240)
     );
     background-clip: text;
     color: transparent;
@@ -41,8 +37,9 @@ h1{
     }
 }
 body{
-   background: #833AB4;
-background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 93%, rgba(252, 176, 69, 1) 100%);
+   background: url(https://images.unsplash.com/photo-1655841439659-0afc60676b70?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)center no-repeat;
+       background-size: cover;
+       color: white;
 }
 #one{
     text-align: center;
@@ -66,7 +63,7 @@ background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 
     align-items: center;
     gap: 10px;
 }
-/* #rhitam-insta{
+#rhitam-insta{
     align-items: center;
     border-radius: 10px;
     justify-content: center
@@ -76,46 +73,7 @@ background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 
     align-items: center;
     border-radius: 10px;
     justify-content: center;
-} */
-.custom-shape-divider-top-1789299733 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1789299961 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1789300053 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1789300053 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 206px;
-}
-
-.custom-shape-divider-bottom-1789300053 .shape-fill {
-    fill: #005eff;
-}
+} 
 a{
     text-decoration: none;
     color: beige;
