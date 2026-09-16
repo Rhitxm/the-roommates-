@@ -6,14 +6,16 @@ roommates =[
             "instagram": "https://www.instagram.com/rhitxm.exe/",
             "linkedin": "https://www.linkedin.com/in/rhitam-paul-4a58021b4/",
             "profile_image": "https://avatars.githubusercontent.com/u/293724039?v=4",
-            "github": "https://github.com/Rhitxm"
+            "github": "https://github.com/Rhitxm",
+            "github_username":"Rhitxm"
         },
     {
         "name": "Sumedh",
         "instagram": "https://www.instagram.com/sumedhg.69/",
         "linkedin": "https://www.linkedin.com/in/sumedh-ghule-790617342/",
         "profile_image": "https://avatars.githubusercontent.com/u/190742018?v=4",
-        "github": "https://github.com/Sumedh2509"
+        "github": "https://github.com/Sumedh2509",
+        "github_username":"Sumedh2509"
     }
     ]
 
@@ -36,7 +38,7 @@ education_data = {
                                   "achv3desc":"Achieved an All India Rank of 8,749 in WBJEE, reflecting a strong foundation in mathematics, physics, and analytical problem-solving. This accomplishment highlights my dedication, competitive spirit, and commitment to pursuing excellence in engineering and technology.",
                                   "ach1year":"2019-20",
                                   "ach2year":"2025-26",
-                                  "ach3year":"2025-26"},
+                                  "ach3year":"2025-26",},
                         "sumedh":{"name":"Sumedh", 
                                   "college":"VESIT", 
                                   "course":"Computer engineering",
@@ -54,4 +56,4 @@ education_data = {
                                   "achv3desc":"Achieved a 98.12 percentile in MHT-CET in 2026, demonstrating strong academic performance and consistent preparation. This achievement reflects my dedication to pursuing engineering and building a strong foundation for my technical career.",
                                   "ach1year":"2020-21",
                                   "ach2year":"2024-2025",
-                                  "ach3year":"2026-26"}}
+                                  "ach3year":"2026-26",}}

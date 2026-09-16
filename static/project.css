@@ -1,0 +1,14 @@
+
+
+.project-card{
+    border:1px solid black;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+}
+
+
+.project-container{
+    display: flex;
+    gap: 20px;
+}
