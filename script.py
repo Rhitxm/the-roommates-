@@ -38,7 +38,7 @@ def education(name):
                                   "10year" : "2023-2024",
                                   "12year": "2025-2026",
                                   "clgyear": "2026-2030"},
-                                  "sumedh":{"name":"Sumedh", 
+                        "sumedh":{"name":"Sumedh", 
                                   "college":"VESIT", 
                                   "course":"Computer engineering",
                                   "10year": "2022-2023",

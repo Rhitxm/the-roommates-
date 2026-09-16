@@ -1,75 +1,93 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static' , filename='style1.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
     <title>A portfolio for roommates</title>
-
 </head>
+
 <body>
+
+```
+<header>
     <h1>Welcome to our Portfolio</h1>
-    
+</header>
+
+<br>
+
 <div class="flex-container">
 
-    <!-- genearlizing the html -->
-  {%for person in people%}
-   <div class = "box">
-    <img src = "{{person.profile_image}}"
-         alt = "profile image"
-         width = "200"
-         height= "200">
+    {% for person in people %}
 
-    <p><b>{{person.name}}</b></p>
+    <div class="box">
 
-    <a href="{{person.instagram}}" target="_blank">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLMeCMRrwdD3io9ne_xIIyQ0qwVfyv3NrD8pMhnlamg&s"
-        alt="Instagram"
-        width="30"
-        height="30">
-    </a>
-    <a href="{{person.linkedin}}" target="_blank">
-        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1280px-LinkedIn_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
-        alt="Linkedin"
-        width="30"
-        height="30">
-    </a>      
-    <a href="{{person.github}}" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-        alt="Github"
-        width="30"
-        height="30">
-    </a> 
-    <a href="{{ url_for('education', name=person.name|lower) }}">
-    Education
-    </a>     
-   </div>  
-  {%endfor%}
+        <div>
+            <img src="{{ person.profile_image }}"
+                 alt="Profile Image"
+                 width="300"
+                 height="300">
+
+            <p><b>{{ person.name }}</b></p>
+
+            <a href="{{ person.instagram }}" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLMeCMRrwdD3io9ne_xIIyQ0qwVfyv3NrD8pMhnlamg&s"
+                     alt="Instagram"
+                     width="40"
+                     height="40">
+            </a>
+
+            <a href="{{ person.linkedin }}" target="_blank">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1280px-LinkedIn_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
+                     alt="LinkedIn"
+                     width="40"
+                     height="40">
+            </a>
+
+            <a href="{{ person.github }}" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                     alt="Github"
+                     width="40"
+                     height="40">
+            </a>
+
+            <br><br>
+
+            <a href="{{ url_for('education', name=person.name|lower) }}">
+                Education
+            </a>
+
+            <br><br>
+
+            <!-- Skills route will be added later -->
+            <a href="#">
+                Skills
+            </a>
+
+        </div>
+
+    </div>
+
+    {% endfor %}
 
 </div>
-<div class="custom-shape-divider-bottom-1789300053">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
-</div>
 
+<footer>
+    <div class="custom-shape-divider-bottom-1789300053">
+        <svg data-name="Layer 1"
+             xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 1200 120"
+             preserveAspectRatio="none">
 
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill">
+            </path>
 
+        </svg>
+    </div>
+</footer>
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
+</html>
