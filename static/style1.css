@@ -94,6 +94,16 @@ a{
     font-size: larger;
 }
 .btn{
+     object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.btn:hover{
+    transform: scale(1.12);
+}
+.btn{
+  font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
     padding: 15px 40px;
     border: none;
     outline: none;
