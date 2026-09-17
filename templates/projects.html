@@ -22,8 +22,9 @@
             <p>{{ project.description }}</p>
 
             <p>Language: {{ project.language }}</p>
-
-            <p>⭐ {{ project.stars }}</p>
+            <div class = "project-stars">    
+                <p>⭐ {{ project.stars }}</p>
+            </div>
 
             <a href="{{ project.url }}" target="_blank">
                 View on GitHub
