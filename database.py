@@ -1,6 +1,6 @@
 import sqlite3
 
-connection = sqlite3.connect("roommates.db") 
+connection = sqlite3.connect("roommates.db", check_same_thread=False) 
 #squlite3.connect() - creates roommates.db if it is not created or opens it , if it is already created
 cursor = connection.cursor() #we need to create a cursor in order to make changes in our database
 #retrieve data from it and give commands to it 
