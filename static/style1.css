@@ -12,12 +12,13 @@
     text-align: center;
 }
 h1{
-    font-size: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 90px;
     text-align: center;
     background: linear-gradient(
         to right,
-        rgb(255, 254, 255),
+        rgb(255, 254, 255, 0.893),
         rgb(255, 255, 255),
         rgb(201, 211, 225),
         rgb(248, 250, 248),
