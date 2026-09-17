@@ -1,12 +1,15 @@
 from flask import Flask , render_template , abort #importing things
 from data import roommates ,education_data
 from github import get_github_data
+from database import get_views, increment_views
 
 app = Flask(__name__) #assigning the variable app
 
 @app.route("/") #routing - /  means home page basically 
 def home():
-    return render_template("index1.html", people= roommates ) #people= roommates , basically tells that use the strings in roommates list for the variable 'people'in our html file
+    increment_views()
+    views = get_views()
+    return render_template("index1.html", people= roommates, views= views ) #people= roommates , basically tells that use the strings in roommates list for the variable 'people'in our html file
         #remember - the variable for html --> people , the variable that it is acessing from python-->roommates
 
     

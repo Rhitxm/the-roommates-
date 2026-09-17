@@ -6,8 +6,8 @@ def get_github_data(name):
     response = requests.get(url) #gets/returns a response object and stores it in response
     
 
-    if response.status_code ==200:
-        repositories = response.json() #coverts the json to a list of dictionaires 
+    if response.status_code == 200:
+        repositories = response.json() #converts the json to a list of dictionaires 
         filtered_repositories = []
         for repo in repositories:
             filtered_repo = {
