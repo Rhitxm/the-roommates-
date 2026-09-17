@@ -1,14 +1,30 @@
-
+body{
+    font-family: "DM Sans", sans-serif;
+}
 
 .project-card{
     border:1px solid black;
     padding: 20px;
     margin: 20px;
     width: 300px;
+    text-align: center;
+    font-weight: 400;
+    
 }
-
 
 .project-container{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;  /* if there is no horizontal space, move the card to new row */
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.project-card h2 {
+    font-size: 22px;
+    font-weight: 500;
 }
