@@ -54,18 +54,24 @@ body{
     color: white;
 }
 .profile-image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.profile-image:hover{
+  transform: scale(1.12);
+    box-shadow: 0 0 20px cyan,
+                0 0 40px rgba(0, 255, 255, 0.5);
 }
 .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius:10px;
-    overflow: hidden;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.social-icons:hover{
+  transform: scale(1.12);
+    box-shadow: 0 0 20px cyan,
+                0 0 40px rgba(0, 255, 255, 0.5);
 }
 /* #rhitam-insta{
     align-items: center;
