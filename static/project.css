@@ -78,3 +78,19 @@ h1 {
     fill: white; /*this is special for svg , equivalent to color in our normal attributes*/
     /*if u did fill:Red it will make the logo red*/
 }
+
+/*github contribution chart customization*/
+.contribution-chart {
+    text-align: center; /*keep in mind-this centers the thing inside our div , not the div itself*/
+    margin-top: 50px ;
+    background: #111111; /*gives the background*/
+    border: 1px solid #000607; /*gives our div a border*/
+    border-radius: 16px; /*rounding the edges*/
+    padding: 20px;
+    width: 780px; /*decides the width of our division box*/
+
+    /*adding below two makes the div centered*/
+    /*take whatever space left and divide it equally amongst the two*/
+    margin-left: auto; 
+    margin-right: auto;
+}
