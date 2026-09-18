@@ -7,7 +7,11 @@ roommates =[
             "linkedin": "https://www.linkedin.com/in/rhitam-paul-4a58021b4/",
             "profile_image": "https://avatars.githubusercontent.com/u/293724039?v=4",
             "github": "https://github.com/Rhitxm",
-            "github_username":"Rhitxm"
+            "github_username":"Rhitxm",
+            "projects" :[
+                {"owner":"Rhitxm", 
+                 "repo":"the-roommates-"}
+            ]
         },
     {
         "name": "Sumedh",
@@ -15,7 +19,15 @@ roommates =[
         "linkedin": "https://www.linkedin.com/in/sumedh-ghule-790617342/",
         "profile_image": "https://avatars.githubusercontent.com/u/190742018?v=4",
         "github": "https://github.com/Sumedh2509",
-        "github_username":"Sumedh2509"
+        "github_username":"Sumedh2509",
+        "projects" :[
+                        {"owner":"Rhitxm", 
+                         "repo":"the-roommates-"},
+                         {"owner":"Sumedh2509", 
+                          "repo":"leetcode_practice"}
+                         
+                    ]
+
     }
     ]
 

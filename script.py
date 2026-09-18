@@ -1,6 +1,6 @@
 from flask import Flask , render_template , abort #importing things
 from data import roommates ,education_data
-from github import get_github_data
+from github import get_repo_data
 from database import get_views, increment_views
 
 app = Flask(__name__) #assigning the variable app
@@ -42,9 +42,13 @@ def projects(name):
         
     if selected_person is None:
         abort(404)
-    projects = get_github_data(selected_person["github_username"]) #kim - get_github_data- returns  lists containing dictionaries
+    projects = [] #creating a list to store projects 
+    for project in selected_person["projects"]: #iterates thru the dicts inside the list projects which is inside roommates (main list) (which is inside the data.py)
+        data = get_repo_data(project["owner"], project["repo"]) # keep in mind - data is a dictionary
+        if data is not None:
+            projects.append(data) #appending those dictionaries inside our projects
     return render_template("projects.html",person=selected_person,projects=projects)
-    #passing two things to projects.html --> selecte_person (a dict) as person and project(list of dict) as project
+    # passing selected_person as the variable person and projects as projects in projects.html
 
 if __name__ == "__main__":
     app.run(debug=True)
