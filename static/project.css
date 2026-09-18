@@ -1,16 +1,17 @@
-body{
+body{ /*colour of text*/
     font-family: "DM Sans", sans-serif;
     background: #0a0a0a; /*background of whole body*/
     color: whitesmoke; /*colour of text*/
 }
 
+/*this only applies to the division we have in our html page*/
 .project-card{
     border:1px solid black;
     padding: 20px;
     margin: 20px;
     width: 300px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 400;  /*basically affects the boldness of text*/
     background: #111111;
     border: 1px solid #2a2a2a;
     border-radius: 16px; /*rounding the edges*/
@@ -18,11 +19,13 @@ body{
     transition: 0.3s; /*time it takes to pop out to 4px when hovered over*/
     
 }
+/*only affects the stars section we have divided in html*/
 .project-stars {
     background: #1a1a1a;
     border-radius: 8px;
     padding: 1px 10px;
 }
+
 /*hover animation*/
 .project-card:hover {
     box-shadow: 0 0 16px rgba(0, 229, 255, 0.5); /*change the glow slightly when hovered over, last value is its itensity*/
@@ -46,4 +49,32 @@ h1 {
 .project-card h2 { /*this only modifies h2's data that we change while inherting other traits from project-card*/
     font-size: 22px;
     font-weight: 500;
+}
+
+/*changes the github box part only*/
+.project-card a {
+    display: inline-flex; /*this is what makes the arrow and github logo appear side by side instead of in a col*/
+    align-items: center;
+    gap: 8px; /*decides the gap between our github logo and arrow*/
+    padding: 15px 40px;
+    background: #1a1a1a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;/*without this the stars and github box merge- this is like saying give 20px of space above this box*/
+    box-shadow: 0 3px 0 #050505; /*makes the github box look a little elevated- the 3px part shows how much */ 
+}
+
+/*the folllowing applies when the github box is clicked - that's why the a:active thing*/
+/*lowk can't even notice it most of the time--- subtttleeee*/
+.project-card a:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 #050505;
+}
+
+.project-card a svg {
+    width: 24px;  /*width of our github logo*/
+    height: 24px;
+    fill: white; /*this is special for svg , equivalent to color in our normal attributes*/
+    /*if u did fill:Red it will make the logo red*/
 }
