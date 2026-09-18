@@ -163,3 +163,63 @@ a{
     50% {background-position: 400% 0;}
     100% {background-position: 0 0;}
  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+        min-height: 20vh;
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        background-image: url(image.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        padding: 1rem;
+        position: fixed;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 2rem;
+        border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5)
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+    #glass{
+        text-decoration: none;
+        color: #ffda79;
+        font-weight: 500;
+        position: relative;
+        padding: 5px 0;
+        transition: color 0.3s ease;
+    }
+    #glass::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        left: 50%;
+        transition: all 0.3s ease;
+    }
+    #glass:hover::after{
+        width: 100%;
+        left: 0;
+    }
+    #glass:hover{
+        color: #FFF;
+    }
