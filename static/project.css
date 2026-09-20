@@ -2,6 +2,10 @@ body{ /*colour of text*/
     font-family: "DM Sans", sans-serif;
     background: #0a0a0a; /*background of whole body*/
     color: whitesmoke; /*colour of text*/
+    background-image: url("project-bg.avif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /*this only applies to the division we have in our html page*/
@@ -93,4 +97,19 @@ h1 {
     /*take whatever space left and divide it equally amongst the two*/
     margin-left: auto; 
     margin-right: auto;
+}
+ 
+.title{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 20px;
+    text-align: center;
+    width: 780px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center; /*centres horizontally*/
+    justify-content: center; /*centeres vertically*/
+
 }

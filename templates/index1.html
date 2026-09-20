@@ -76,6 +76,10 @@
             <a href="#">
                <button class="btn">Skills</button>
             </a>
+            <br><br>
+            <a href="{{ url_for('projects', name=person.name|lower) }}">
+                 <button class="btn">Projects</button>
+            </a>
 
         </div>
         
