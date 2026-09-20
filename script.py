@@ -1,5 +1,5 @@
 from flask import Flask , render_template , abort #importing things
-from data import roommates ,education_data
+from data import roommates ,education_data, skills_data
 from github import get_repo_data
 from database import get_views, increment_views
 
@@ -28,6 +28,14 @@ def education(name):
         abort(404)
     return render_template("education.html", person= data_of)
 
+#routing page for skills
+@app.route("/skills/<name>")
+def skills(name):
+    selected_skills = skills_data.get(name)
+    name = name.capitalize()
+    if selected_skills is None:
+        return abort(404)
+    return render_template("skills.html", skills = selected_skills , name = name)
 
 #routing page for projects
 @app.route("/projects/<name>")  #<name>-  placeholder

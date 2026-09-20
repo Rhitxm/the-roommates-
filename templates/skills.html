@@ -1,10 +1,11 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='skills.css') }}">
 
     <title>Skills | Roommates</title>
 </head>
@@ -12,128 +13,44 @@
 <body>
 
     <header>
-        <h1>My Skills</h1>
+        <h1>{{ name }}'s Skills</h1>
         <p>Technologies & tools I work with</p>
     </header>
 
     <main class="skills-container">
 
-        <!-- Programming -->
-        <section class="skill-category">
+        {% for category, skill_list in skills.items() %}
 
-            <h2>💻 Programming</h2>
+            <section class="skill-category">
 
-            <div class="skills-grid">
+                <h2>{{ category }}</h2>
 
-                <div class="skill-card">
-                    <h3><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1920px-C_Programming_Language.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" height="40px" width="37px"></h3>
-                    <div class="progress">
-                        <div class="progress-bar c"></div>
-                    </div>
-                    <span>50%</span>
+                <div class="skills-grid">
+
+                    {% for skill in skill_list %}
+
+                        <div class="skill-card">
+
+                            <h3>
+                                <img src="{{ skill.icon }}" height="40px" width="37px">
+                                {{ skill.name }}
+                            </h3>
+
+                            <p class="skill-description">
+                                {{ skill.description }}
+                            </p>
+
+                        </div>
+
+                    {% endfor %}
+
                 </div>
 
-                <div class="skill-card">
-                    <h3><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/3840px-Python-logo-notext.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" height="40px" width="40px"></h3>
-                    <div class="progress">
-                        <div class="progress-bar python"></div>
-                    </div>
-                    <span>20%</span>
-                </div>
+            </section>
 
-                <div class="skill-card">
-                    <h3><img src="https://i.pinimg.com/1200x/e9/94/61/e99461fdd5b3db8bdb3081d8acf5e524.jpg" height="50px" width="40px"</h3>
-                    <div class="progress">
-                        <div class="progress-bar java"></div>
-                    </div>
-                    <span>40%</span>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Web Development -->
-        <section class="skill-category">
-
-            <h2>🌐 Web Development</h2>
-
-            <div class="skills-grid">
-
-                <div class="skill-card">
-                    <h3><img src="https://camo.githubusercontent.com/9126ea765f2675933491c3919c77fd441105a28b04848b7f8b9b6a83b3b755e8/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667" height="40px" width="40px"></h3>
-                    <div class="progress">
-                        <div class="progress-bar html"></div>
-                    </div>
-                    <span>95%</span>
-                </div>
-
-                <div class="skill-card">
-                    <h3><img src="https://camo.githubusercontent.com/1835da36dd95f3f0948730ae4479b6279d6f114265a46b863dcf1fb79fd703ec/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2e737667" height="40px" width="40px"></h3>
-                    <div class="progress">
-                        <div class="progress-bar css"></div>
-                    </div>
-                    <span>90%</span>
-                </div>
-
-                <div class="skill-card">
-                    <h3><img src="https://icon2.cleanpng.com/20180810/ekz/11448a7a96ee808a3cdbaf0df9570976.webp" height="40px" width="40px"></h3>
-                    <div class="progress">
-                        <div class="progress-bar js"></div>
-                    </div>
-                    <span>65%</span>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Tools -->
-        <section class="skill-category">
-
-            <h2>🛠️ Tools & Technologies</h2>
-
-            <div class="skills-grid">
-
-                <div class="skill-card">
-                    <h3><img src="https://make-cxp-documentation.ams3.digitaloceanspaces.com/apps-center-icons/github.png" height="40px" width="40px"></h3>
-                    <div class="progress">
-                        <div class="progress-bar github"></div>
-                    </div>
-                    <span>80%</span>
-                </div>
-
-                <div class="skill-card">
-                    <h3><img src="https://cdn.freebiesupply.com/logos/large/2x/arduino-1-logo-png-transparent.png" height="40px" width="40px"></h3>
-                    <div class="progress">
-                        <div class="progress-bar arduino"></div>
-                    </div>
-                    <span>10%</span>
-                </div>
-
-                <div class="skill-card">
-                    <h3><img src="https://camo.githubusercontent.com/7360d73700c18da21cf6dad464ef89c01f599641b74c151e0fc5559509992df8/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f626c656e6465722f626c656e6465722d6f726967696e616c2e737667" height="40px" width="40px"></h3>
-                    <div class="progress">
-                        <div class="progress-bar unity"></div>
-                    </div>
-                    <span>60%</span>
-                </div>
-
-            </div>
-
-        </section>
+        {% endfor %}
 
     </main>
-
-</body>
-</html>
-
-
-
-    
-
 
 </body>
 </html>

@@ -69,3 +69,107 @@ education_data = {
                                   "ach1year":"2020-21",
                                   "ach2year":"2024-2025",
                                   "ach3year":"2026-26",}}
+
+skills_data = {
+    "Rhitam": {
+        "💻Programming": [
+            {
+                "name": "C",
+                "icon": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1920px-C_Programming_Language.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" ,
+                "description": "50"
+            },
+            {
+                "name": "Python",
+                "icon": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/3840px-Python-logo-notext.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+                "description": "20"
+            },
+            {
+                "name": "Java",
+                "icon": "https://i.pinimg.com/1200x/e9/94/61/e99461fdd5b3db8bdb3081d8acf5e524.jpg",
+                "description": "40"
+            }
+        ],
+
+        "🌐 Web Development": [
+            {
+                "name": "HTML",
+                "icon": "https://camo.githubusercontent.com/9126ea765f2675933491c3919c77fd441105a28b04848b7f8b9b6a83b3b755e8/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667",
+                "description": "95"
+            },
+            {
+                "name": "CSS",
+                "icon": "https://camo.githubusercontent.com/1835da36dd95f3f0948730ae4479b6279d6f114265a46b863dcf1fb79fd703ec/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2e737667",
+                "description": "90"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "https://icon2.cleanpng.com/20180810/ekz/11448a7a96ee808a3cdbaf0df9570976.webp",
+                "description": "65"
+            }
+        ],
+
+        "🛠️ Tools & Technologies": [
+            {
+                "name": "GitHub",
+                "icon": "https://make-cxp-documentation.ams3.digitaloceanspaces.com/apps-center-icons/github.png",
+                "description": "80"
+            },
+            {
+                "name": "Arduino",
+                "icon": "https://cdn.freebiesupply.com/logos/large/2x/arduino-1-logo-png-transparent.png",
+                "description": "10"
+            },
+            {
+                "name": "Blender",
+                "icon": "https://camo.githubusercontent.com/7360d73700c18da21cf6dad464ef89c01f599641b74c151e0fc5559509992df8/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f626c656e6465722f626c656e6465722d6f726967696e616c2e737667",
+                "description": "60"
+            }
+        ]
+    },
+
+    "Sumedh": {
+        "💻 Programming": [
+            {
+                "name":"C",
+                "icon":"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1920px-C_Programming_Language.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+                "description":"Currently in the learning phase"
+            },
+            {
+                "name":"Python",
+                "icon":"https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/3840px-Python-logo-notext.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+                "description":"Comfortable with most of the core Python concepts and currently using it for projects"
+            },
+            {
+                "name":"Flask",
+                "icon":"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
+                "description":"Currently learning Flask and have used it for building dynamic web pages with Jinja and APIs"
+            },
+            {
+                "name":"C++",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+                "description":"Basic understanding"
+            }
+        ],
+
+        "🌐 Web Development": [
+            {
+                "name": "HTML",
+                "icon": "https://camo.githubusercontent.com/9126ea765f2675933491c3919c77fd441105a28b04848b7f8b9b6a83b3b755e8/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667",
+                "description": "Know enough to build and structure a basic web page."
+            },
+            {
+                "name": "CSS",
+                "icon": "https://camo.githubusercontent.com/1835da36dd95f3f0948730ae4479b6279d6f114265a46b863dcf1fb79fd703ec/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2e737667",
+                "description": "Know enough to style and design web pages with layouts, effects and responsive elements."
+            }
+        ],
+
+        "🛠️ Tools & Technologies": [
+            {
+                "name": "GitHub",
+                "icon": "https://make-cxp-documentation.ams3.digitaloceanspaces.com/apps-center-icons/github.png",
+                "description": "Comfortable with GitHub for managing repositories, commits and collaborating on projects."
+            }
+        ]
+    }
+}

@@ -93,112 +93,14 @@ header p {
 }
 
 
-/* Progress bar background */
-
-.progress {
-    height: 8px;
-    background: #334155;
-    border-radius: 10px;
-    overflow: hidden;
+.skill-description {
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 10px;
 }
 
 
-/* Progress bar */
-
-.progress-bar {
-   height: 100%;
-    background: linear-gradient(90deg, #00c853, #00ff88);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 255, 136, 0.7);
-
-    width: 0;
-    animation: fillBar 1.5s ease forwards;
-}
-
-.progress-bar.c {
-    --skill-width: 50%;
-}
-
-.progress-bar.python {
-    --skill-width: 20%;
-}
-
-.progress-bar.java {
-    --skill-width: 40%;
-}
-
-.progress-bar.html {
-    --skill-width: 95%;
-}
-
-.progress-bar.css {
-    --skill-width: 90%;
-}
-
-.progress-bar.js {
-    --skill-width: 65%;
-}
-
-.progress-bar.github {
-    --skill-width: 80%;
-}
-
-.progress-bar.arduino {
-    --skill-width: 10%;
-}
-
-.progress-bar.unity {
-    --skill-width: 60%;
-}
-
-@keyframes fillBar {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: var(--skill-width);
-    }
-}
-
-
-/* Individual skills */
-
-.c {
-    width: 75%;
-}
-
-.python {
-    width: 70%;
-}
-
-.java {
-    width: 60%;
-}
-
-.html {
-    width: 90%;
-}
-
-.css {
-    width: 85%;
-}
-
-.js {
-    width: 65%;
-}
-
-.github {
-    width: 80%;
-}
-
-.arduino {
-    width: 70%;
-}
-
-.unity {
-    width: 55%;
-}
 
 
 /* Percentage */
@@ -215,17 +117,6 @@ header p {
 
 /* Loading animation */
 
-@keyframes load {
-
-    from {
-        transform: scaleX(0);
-    }
-
-    to {
-        transform: scaleX(1);
-    }
-
-}
 
 
 /* Mobile */
