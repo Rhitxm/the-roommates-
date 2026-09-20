@@ -73,7 +73,7 @@
             <br><br>
 
             <!-- Skills route will be added later -->
-            <a href="#">
+            <a href="{{ url_for('skills', name=person.name|capitalize) }}">
                <button class="btn">Skills</button>
             </a>
             <br><br>
