@@ -107,7 +107,7 @@ a{
     color: beige;
     font-size: larger;
 }
-.btn{
+/* .btn{
      object-fit: cover;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -162,7 +162,27 @@ a{
     0% {background-position: 0 0;}
     50% {background-position: 400% 0;}
     100% {background-position: 0 0;}
- }
+ } */
+.btn{
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+     background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    padding: 25px;
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s ease;
+  }
+  .btn:hover{
+     transform: translateY(-8px) scale(1.02);
+
+    background: rgba(255, 255, 255, 0.13);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  }
 *{
     margin: 0;
     padding: 0;

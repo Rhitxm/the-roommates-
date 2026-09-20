@@ -3,12 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     min-height: 100vh;
-    background: url("your-background.jpg") center/cover fixed;
+    background: url("https://images.unsplash.com/photo-1760978632061-ad00f48789ae?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover fixed;
     color: white;
     padding: 30px;
 }
@@ -66,14 +66,14 @@ h2 {
     color: white;
     text-decoration: none;
     padding: 10px 18px;
-    border: 1px solid white;
+    border: 1px solid rgb(239, 211, 73);
     border-radius: 20px;
     transition: 0.3s;
 }
 
 .social-links a:hover {
     transform: translateY(-4px);
-    box-shadow: 0 0 15px white;
+    box-shadow: 0 0 15px rgb(239, 211, 73);
 }
 
 form {
@@ -101,10 +101,10 @@ textarea {
 
 button {
     padding: 13px;
-    border: 2px solid white;
+    border: 2px solid rgb(239, 211, 73);
     border-radius: 25px;
     background: transparent;
-    color: white;
+    color: rgb(239, 211, 73);
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
@@ -112,7 +112,7 @@ button {
 
 button:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 20px white;
+    box-shadow: 0 0 20px rgb(239, 211, 73);
 }
 
 @media (max-width: 750px) {
