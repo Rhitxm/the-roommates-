@@ -58,5 +58,10 @@ def projects(name):
     return render_template("projects.html",person=selected_person,projects=projects)
     # passing selected_person as the variable person and projects as projects in projects.html
 
+@app.errorhandler(404)  #this is what runs whenever this certain error occurs anywhere in our page
+def page_not_found(error):
+    return render_template("404.html"), 404
+
+
 if __name__ == "__main__":
     app.run(debug=True)

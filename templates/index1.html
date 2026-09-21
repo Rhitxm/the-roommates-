@@ -65,18 +65,18 @@
             </div>
 
             <br><br>
-
+            
             <a href="{{ url_for('education', name=person.name|lower) }}">
                 <button class="btn">Education</button>
             </a>
 
-            <br><br>
+            
 
             <!-- Skills route will be added later -->
             <a href="{{ url_for('skills', name=person.name|capitalize) }}">
                <button class="btn">Skills</button>
             </a>
-            <br><br>
+            
             <a href="{{ url_for('projects', name=person.name|lower) }}">
                  <button class="btn">Projects</button>
             </a>
